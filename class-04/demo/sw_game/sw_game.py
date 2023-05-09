@@ -5,6 +5,7 @@
 
 class ForceUser: # parent class
 
+
     @classmethod
     def force_only(cls):
         return 'this method only for  forceuser class!'
@@ -15,6 +16,11 @@ class ForceUser: # parent class
 
    
 
+    def __str__(self):
+        return f'I am {self.name}, my mantra is {self.get_code()}' # it will print the instance in prettier way 
+
+    def __repr__(self):
+        return 'JediMaster("name")' # add technical info about instances
 
     def attacking(self):
         return f'{self.name} is Force attacking!'
@@ -88,6 +94,10 @@ if __name__ == '__main__':
     print(vade.attacking())
     print(vade.getting_hit())
     print(yoda.force_only())
+
+    ### __str__ and __repr__
+    print(yoda) # to show the __str__ (no need to call the method)
+    print(yoda.__repr__())
   
   
    

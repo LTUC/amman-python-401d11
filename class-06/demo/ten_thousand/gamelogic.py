@@ -6,7 +6,7 @@ class GameLogic:
         pass
     
     @staticmethod
-    def roll_dice(dice_num):# this method with take 
+    def roll_dice(dice_num):# write line by line  comments  for documntation
         return tuple(random.randint(1, 6) for _ in range(dice_num))
         
 

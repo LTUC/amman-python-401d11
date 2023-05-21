@@ -1,35 +1,31 @@
-# Ten Thousand Game
+# Ten Thousand 3
 
-## Version 1
+## Overview
 
-- GameLogic class
-  - roll_dice
-  - calculate_score
+For _Ten Thousand 3_ we'll be handing cheaters and losers. In other words, people who entered dice they didn't actually roll and people who gambled and lost.
 
-- Banker
-  - deposit/bank
-  - shelf
-  - clear
+## Class Outline
 
-## Version 2
+<!-- To Be Completed By Instructor -->
+- Challenge Review
+- Challenge Preview
+- Lab Review
+- Lab Preview
+- Guided Research
+- Demo
 
-- beginning Game class
-  - allows banking or quitting on first roll of multiple rounds
-  - no rerolls
-  - no zilches
-  - no cheating checks
-- Introducing Flow testing with Flo
+## Learning Objectives
 
-## Version 3
+### Students will be able to
 
-- validate_keepers
-- get_scorers
-- Advanced Game class
-  - rerolls allowed
-  - using all six dice resets to six dice
-  - zilches happen
-  - cheating is checked
+#### Describe and Define
 
-## Version 4
+- Validating user input
+- Edge cases in game rules
+- Assess game improvements
 
-- Bot time
+#### Execute
+
+- Block invalid dice
+- Continue rolling when all dice scored in current turn
+- End turn when there's a _zilch_

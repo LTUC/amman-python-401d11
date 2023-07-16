@@ -1,0 +1,12 @@
+
+{% extends 'base.html'%}
+
+{% block title%} list of things{% endblock %}
+{% block content%}
+
+<h1>Things List</h1>
+{%  for thing in object_list %}
+<a href="{% url 'thing_detail' thing.id %}"><h3>{{thing.name}}</h3></a>
+{% endfor %}
+<a href="{% url 'thing_create'%}">create new thing</a>
+{% endblock%}

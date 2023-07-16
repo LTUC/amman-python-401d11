@@ -1,0 +1,14 @@
+{% extends 'base.html'%}
+{% block content%}
+<h1>Things Details</h1>
+
+<h3>Name : {{thing.name|capfirst}}</h3>
+<h3>Rank : {{thing.rank| add:2}}</h3>
+<h3>Reviewer : {{thing.reviewer|capfirst}}</h3>
+
+<a href="{% url 'thing_update' thing.id%}">Update</a>
+<a href="{% url 'thing_delete' thing.id%}">Delete</a>
+
+
+
+{% endblock%}

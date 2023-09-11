@@ -26,7 +26,7 @@ export function AuthProvider(props){
 
     async function login(username,password){
         //const response = axios.post(url, {username,password})
-        const url = baseUrl+"/api/token/"
+        const url = baseUrl+"api/token/"
         const options={
                 method : "POST",
                 body : JSON.stringify({username,password}),
